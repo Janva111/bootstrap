@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <title>Autobazar</title>
+</head>
+
+<body>
+    <section class="logo">
+        <h1>Autobazar</h1>
+    </section>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+
+    <script type="module">
+        import * as bootstrap from 'bootstrap'
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+    </script>
+
+    <section id="scrollspy">
+
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+            <a class="navbar-brand" href="#">Autobazar</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">O nás</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Nabídka vozů</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Více</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#scrollspyHeading3">Financování</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading4">Výkup vozů</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">Testovací jízda</a></li>
+                        <li><a class="dropdown-item" href="index.html">První stránka</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
+            <h4 id="scrollspyHeading1">O nás</h4>
+            <p>
+                Jsme moderní autobazar s více než 15 lety zkušeností na trhu. Nabízíme prověřená vozidla s garancí
+                původu,
+                pravidelným servisem a možností prodloužené záruky. Zakládáme si na férovém přístupu a osobním jednání.
+            </p>
+            <p>
+                Naše služby zahrnují kompletní asistenci při koupi i prodeji vozidel, odborné poradenství ohledně výběru
+                auta
+                podle potřeb zákazníka, možnost sjednání pojištění a pomoc s registrací vozu. Náš tým odborníků
+                pravidelně
+                školíme, aby poskytoval aktuální a kvalitní informace.
+            </p>
+            <p>
+                Díky spolupráci s renomovanými servisy a leasingovými společnostmi můžeme nabídnout zákazníkům komplexní
+                péči, od prvního kontaktu až po následný servis. Naším cílem je, aby každý zákazník odcházel spokojený a
+                měl pocit bezpečí při nákupu.
+            </p>
+
+            <h4 id="scrollspyHeading2">Nabídka vozů</h4>
+            <p>
+                V naší nabídce najdete osobní vozy, SUV, dodávky i sportovní auta. Každé vozidlo prochází technickou
+                kontrolou a měřením tloušťky laku. Doživotně garantujeme stav tachometru a možnost vrácení vozu do 14
+                dnů.
+            </p>
+            <p>
+                Naše auta pochází od ověřených majitelů, jsou vybavena kompletní servisní historií a prošla důkladnou
+                kontrolou všech hlavních komponentů – motor, převodovka, brzdy, podvozek. Na stránkách každého vozu
+                najdete
+                fotogalerii, technické parametry a popis výbavy.
+            </p>
+            <p>
+                Nabízíme také možnost online rezervace vybraného vozidla, přehled aktuálních slev a akcí a možnost
+                výhodného
+                kombinovaného nákupu více vozů pro firemní klienty. Naši prodejci vám rádi poradí s výběrem podle
+                konkrétních požadavků, například rodinné auto, městský automobil, nebo auto pro dlouhé cesty.
+            </p>
+
+            <h4 id="scrollspyHeading3">Financování</h4>
+            <p>
+                Nabízíme výhodné financování prostřednictvím několika partnerských bank. Vyřízení úvěru zabere obvykle
+                méně než 20 minut. Pomůžeme vám najít nejvhodnější splátkový kalendář přesně podle vašich možností.
+            </p>
+            <p>
+                Kromě klasického úvěru nabízíme také leasingové varianty, operativní leasing, a možnost odpočtu DPH pro
+                firmy. Při sjednávání financování vždy zohledňujeme individuální situaci zákazníka, jeho příjem a
+                potřeby.
+            </p>
+            <p>
+                Pro každého klienta připravíme několik variant financování s přesným výpočtem měsíčních splátek, úroků a
+                celkových nákladů. Díky tomu získáte jasný přehled a žádné skryté poplatky vás nepřekvapí.
+            </p>
+
+            <h4 id="scrollspyHeading4">Výkup vozů</h4>
+            <p>
+                Vykupujeme vozidla všech kategorií za férové ceny. Ocenění vozu provádíme zdarma a na počkání. Peníze
+                vyplácíme ihned na ruku nebo na účet. Nabízíme také možnost protiúčtu.
+            </p>
+            <p>
+                Pro rychlé a spravedlivé ocenění vozidla provádíme kontrolu technického stavu, stáří auta, počtu
+                najetých
+                kilometrů, vybavení a stavu karoserie. Na základě těchto parametrů stanovíme cenu odpovídající reálné
+                tržní hodnotě.
+            </p>
+            <p>
+                Výkup je možný i pro firemní flotily a větší množství vozidel, včetně kompletní administrativní podpory
+                a
+                přepisů na nové majitele. U všech výkupů garantujeme transparentní proces a rychlé vyřízení.
+            </p>
+
+            <h4 id="scrollspyHeading5">Testovací jízda</h4>
+            <p>
+                Zaujalo vás některé z našich vozidel? Rezervujte si testovací jízdu. K dispozici máte zkušební trasu
+                dlouhou 15 km, kde si auto vyzkoušíte v městském provozu i na okresních cestách.
+            </p>
+            <p>
+                Testovací jízda je vždy bezplatná a probíhá s naším odborným poradcem, který vám vysvětlí všechny funkce
+                vozu a odpoví na vaše otázky. Po dokončení jízdy si můžete rovnou dohodnout financování, pojištění nebo
+                případný výkup starého vozu.
+            </p>
+            <p>
+                Doporučujeme si rezervovat čas testovací jízdy online, aby bylo vozidlo připravené a čekalo pouze na
+                vás.
+                Každá jízda je individuálně přizpůsobena vašim potřebám, abyste získali maximální komfort a jistotu při
+                rozhodování o koupi.
+            </p>
+        </div>
+    </section>
+  <section id="tooltipy">
+    <h3>Užitečné informace</h3>
+    <p>Přejeď myší přes tlačítka pro zobrazení tipů:</p>
+
+    <button type="button" class="btn btn-secondary me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Zjistěte více o možnostech leasingu a spotřebitelského úvěru.">
+        Financování
+    </button>
+
+    <button type="button" class="btn btn-secondary me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Podívejte se na kompletní historii vozů – servis, STK, majitelé.">
+        Historie vozidla
+    </button>
+
+    <button type="button" class="btn btn-secondary me-2" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Rezervujte si testovací jízdu jednoduše online.">
+        Testovací jízda
+    </button>
+
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Odhad ceny vašeho vozu zdarma během pár minut.">
+        Výkup vozu
+    </button>
+</section>
+
+</body>
+
+</html>

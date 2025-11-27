@@ -1,19 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Hello, modularity!</title>
+    <title>Autobazar</title>
 </head>
 
 <body>
     <section class="logo">
         <h1>Autobazar</h1>
+        <p>Kvalitní ojeté vozy se zárukou</p>
     </section>
+
     <script type="importmap">
     {
       "imports": {
@@ -22,38 +23,226 @@
       }
     }
     </script>
+
     <script type="module">
         import * as bootstrap from 'bootstrap'
-
-        new bootstrap.Popover(document.getElementById('popoverButton'))
     </script>
-    <section>
+
+    <section id="navbar">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">Autobazar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" href="#collapse">Domů</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#list-group">Nabídka vozů</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#carousel">Ukázka aut</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#tabulka">Kontakt</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="#modal">Testovací Jizdy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index2.html">Druha Sranka</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </section>
+
+    <section id="collapse">
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1">Informace o prodeji</a>
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2">Servisní
+                informace</button>
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".multi-collapse">Zobrazit
+                vše</button>
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        Nabízíme široký výběr prověřených vozů se servisní historií.
+                        Všechny vozy prochází pečlivou kontrolou technického stavu a jsou připraveny ihned k odběru.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        Každý vůz je důkladně zkontrolován – diagnostika, měření emisí, kontrola brzd, podvozku a
+                        karoserie.
+                        Nabízíme také výhodný poprodejní servis.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accordion">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Proč nakupovat u nás?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        Nabízíme <strong>garantovaný stav kilometrů</strong>, transparentní servisní historii a možnost
+                        zkušební jízdy. Vše s férovým jednáním a bez skrytých poplatků.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Výkup vozidel
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Vykoupíme váš starý vůz za nejlepší možnou cenu. Peníze vyplácíme ihned na místě.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree">
+                        Financování a pojištění
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Vyřídíme za vás výhodný úvěr či leasing a sjednáme povinné ručení i havarijní pojištění.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="oddeleni"></div>
+
+    <section id="list-group">
+        <h3>Dostupné vozy</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Škoda Octavia 2.0 TDI – 189 000 Kč</li>
+            <li class="list-group-item">Volkswagen Golf VII 1.6 TDI – 249 000 Kč</li>
+            <li class="list-group-item">BMW 3 F30 320d – 389 000 Kč</li>
+            <li class="list-group-item">Audi A6 C7 3.0 TDI – 499 000 Kč</li>
+            <li class="list-group-item">Hyundai i30 1.4 CVVT – 159 000 Kč</li>
+            <li class="list-group-item">Toyota Corolla 1.8 Hybrid – 329 000 Kč</li>
+            <li class="list-group-item">Mercedes-Benz C200 CDI – 379 000 Kč</li>
+            <li class="list-group-item">Ford Focus 1.5 EcoBoost – 199 000 Kč</li>
+            <li class="list-group-item">Honda Civic 1.5 VTEC Turbo – 349 000 Kč</li>
+            <li class="list-group-item">Mazda 6 2.2 SkyActiv-D – 299 000 Kč</li>
+        </ul>
+    </section>
+
+    <div class="oddeleni"></div>
+
+    <section id="carousel">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="car1.jpg" class="d-block w-100" alt="Auto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="car2.jpg" class="d-block w-100" alt="Auto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="car3.jpg" class="d-block w-100" alt="Auto 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <div class="oddeleni"></div>
+
+    <section id="tabulka">
+        <h2>Management a vedoucí pracovníci</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Jméno</th>
+                    <th>Pozice</th>
+                    <th>Praxe</th>
+                    <th>Kontakt</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan Novotný</td>
+                    <td>Ředitel společnosti</td>
+                    <td>18 let</td>
+                    <td>novotny@autolux.cz</td>
+                </tr>
+                <tr>
+                    <td>Petra Kovářová</td>
+                    <td>Vedoucí prodeje</td>
+                    <td>12 let</td>
+                    <td>kovarova@autolux.cz</td>
+                </tr>
+                <tr>
+                    <td>Martin Doležal</td>
+                    <td>Technický vedoucí</td>
+                    <td>15 let</td>
+                    <td>dolezal@autolux.cz</td>
+                </tr>
+                <tr>
+                    <td>Lucie Horová</td>
+                    <td>Vedoucí zákaznické podpory</td>
+                    <td>10 let</td>
+                    <td>horova@autolux.cz</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="modal">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Informace o testovací jízdě
+        </button>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Domluvte si testovací jízdu</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Vyplňte nám krátký formulář a ozveme se vám s termínem testovací jízdy.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+                        <button type="button" class="btn btn-primary">Pokračovat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
